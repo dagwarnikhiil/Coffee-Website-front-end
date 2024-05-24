@@ -1,0 +1,349 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Cafe Toronto&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css /style.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; media=&quot;screen and (max-width: 1170px)&quot;
+href=&quot;css/phone.css&quot;&gt;
+    &lt;link
+href=&quot;https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&amp;family=Baloo+B
+haina+2&amp;family=Bree+Serif&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;/head&gt;
+&lt;style&gt;
+    *{
+    margin: 0;
+    padding: 0;
+}
+ 
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+/* Navigationbar : logo and image */
+#logo{
+margin: 10px 10px;
+}
+#logo img{
+height: 100px;
+margin: 3px 6px
+}
+/* Navigationbar : list styling*/
+#navbar ul{
+   
+    display: flex;
+    font-family: &#39;Baloo Bhaijaan 2&#39;, cursive;
+}
+#navbar::before{
+    content: &quot;&quot;;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+   z-index: -1;
+    opacity:  0.6;
+}
+#navbar ul li{
+    /* colour: white; */
+    list-style: none;
+    font-size: 1.3rem
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius:20px   ;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+background-color: white;
+}
+/* home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}  
+#home::before{
+    content: &quot;&quot;;
+   background: url(3.jpg) no-repeat center center/cover ;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+   z-index: -1;
+    opacity: 0.8;
+}  
+#home h1{
+    color:black;
+    text-align: center   ;
+    font-family: &#39;Bree Serif&#39;, serif;
+}
+#home h2{
+    color: wheat;
+    text-align: center;
+    font-family: &#39;Lumanosimo&#39;, cursive;
+}
+#home p{
+    color: white;
+    text-align: center   ;
+    font-family: &#39;Bree Serif&#39;, serif;
+}
+/* services Section */
+ #services{
+
+    margin: 34px;
+    display: flex;
+ }
+ #services .box{
+    border:2px solid brown ;
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+ }
+ #services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+ }
+ #services .box p{
+    font-family: &#39;Bree Serif&#39;, serif;
+ }
+ #services{}
+ #services{}
+ /* img */
+#img img{
+    height: 600px;
+    width: 1510px;
+    top: 0px;
+    left: 0px;
+}
+
+ /*Clients section */
+  #Social-section{
+    height: 344px;
+  }
+  #Social-section::before{
+    content:&quot;&quot; ;
+    position: absolute;
+    background: url(coffee-g6ee45c639_1280.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 54%;
+    z-index: -1;
+    opacity: 0.5;
+
+  }
+  #Social{
+    display: flex;
+    justify-content: center;
+    align-items: center  ;
+  }
+  .Social-item{
+    padding: 34px ;
+  }
+#Social img{
+    height: 120px;
+   
+}
+/*contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: &quot;&quot; ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.7;
+    background: url(contact.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px ;
+    font-size: 1.1rem ;
+}
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: &#39;Bree Serif&#39;, serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 4px 20px;
+}
+/* utility classes */
+.h-primary{
+    font-family: &#39;Bree Serif&#39;, serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: &#39;Bree Serif&#39;, serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px ;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+text-align: center;
+}
+&lt;/style&gt;
+
+&lt;body&gt;
+    &lt;nav id=&quot;navbar&quot;&gt;
+        &lt;div id=&quot;logo&quot;&gt;
+            &lt;img src=&quot;logo5.png&quot;&gt;
+        &lt;/div&gt;
+
+        &lt;ul&gt;
+            &lt;li class=&quot;item&quot;&gt;&lt;a href=&quot;#&quot;&gt;HOME&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;item&quot;&gt;&lt;a href=&quot;#&quot;&gt;CONTACT US&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;item&quot;&gt;&lt;a href=&quot;#&quot;&gt;ABOUT US&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;item&quot;&gt;&lt;a href=&quot;#&quot;&gt;MENU&lt;/a&gt;&lt;/li&gt;
+            &lt;li class=&quot;item&quot;&gt;&lt;a href=&quot;#&quot;&gt;ORDER ONLINE&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;section id=&quot;home&quot;&gt;
+         &lt;h1 class=&quot;h-primary&quot;&gt;Welcome To The House Of Coffee&lt;/h1&gt;
+         &lt;h2 class=&quot;h-primary&quot;&gt;Cafe Toronto&lt;/h2&gt;
+         &lt;p&gt;Experience our signature coffee blends that celebrate coffee that
+have stayed consistent for over 20 years.&lt;/p&gt;
+         
+         &lt;p&gt;Perfectly Roasted. Balanced Flavors. Performs exceptionally well
+through various brewing techniques
+        &lt;/p&gt;
+        &lt;button class=&quot;btn&quot;&gt;
+            Order Now
+          &lt;/button&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;services-container&quot;&gt;
+        &lt;h1 class=&quot;&#39;h-primary center&quot;&gt;Our Services&lt;/h1&gt;
+        &lt;div id=&quot;services&quot;&gt;
+            &lt;div class=&quot;box&quot;&gt;
+            &lt;img src=&quot;2.jpg&quot; alt=&quot;cafetoronto.com&quot;&gt;
+            &lt;h2 class=&quot;h-secondary center&quot;&gt;Franchise&lt;/h2&gt;
+            &lt;p class=&quot;center&quot;&gt;A franchise is a type of license that grants a
+franchisee access to a franchisor&#39;s proprietary business knowledge, processes,
+and trademarks, thus allowing the franchisee to sell a product or service
+under the franchisor&#39;s business name. &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;box&quot;&gt;
+            &lt;img src=&quot;1.jpg&quot; alt=&quot;cafetoronto.com&quot;&gt;
+            &lt;h2 class=&quot;h-secondary center&quot;&gt;Menu&lt;/h2&gt;
+            &lt;p class=&quot;center&quot;&gt;Select Your Meal Here!!!
+                Until you don&#39;t feel it, don&#39;t say it or do it. And if you say
+it, make sure you start to feel it, and begin to do the same. Consistency
+weaves through our thoughts, feelings, words and actions. &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;box&quot;&gt;
+            &lt;img src=&quot;5.jpg&quot; alt=&quot;cafetoronto.com&quot;&gt;
+            &lt;h2 class=&quot;h-secondary center&quot;&gt;Home Delivery&lt;/h2&gt;
+
+            &lt;p class=&quot;center&quot;&gt; We allows you to experience delicious Coffee
+from the comfort of your sofa at home or cubicle in office. All orders are
+delivered quickly and efficiently, allowing you the peace of mind to know that
+smiles-inducing food is never too far. &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/section&gt;
+   
+    &lt;section  id=&quot;img&quot;&gt;
+        &lt;div id=&quot;img&quot;&gt;
+        &lt;div class=&quot;class-img&quot;&gt;
+            &lt;img src=&quot;innside.jpg&quot; alt=&quot;Img&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;class-img&quot;&gt;
+            &lt;img src=&quot;inside2.png&quot; alt=&quot;Img&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id=&quot;Social-section&quot;&gt;
+        &lt;h1 class=&quot;h-primary center&quot;&gt;Social&lt;/h1&gt;
+        &lt;div id=&quot;Social&quot;&gt;
+        &lt;div class=&quot;Social-item&quot;&gt;
+            &lt;img src=&quot;twitter.png&quot; alt=&quot;Social&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;Social-item&quot;&gt;
+            &lt;img src=&quot;insta.png&quot; alt=&quot;Social&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;Social-item&quot;&gt;
+            &lt;img src=&quot;fb.png&quot; alt=&quot;Social&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;Social-item&quot;&gt;
+            &lt;img src=&quot;yt.png&quot; alt=&quot;Social&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id=&quot;contact&quot;&gt;
+        &lt;h1 class=&quot;h-primary center&quot;&gt;Contact Us &lt;/h1&gt;
+        &lt;div id=&quot;contact-box&quot;&gt;
+            &lt;form action=&quot;&quot;&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot;
+                    placeholder=&quot;Enter your name&quot;&gt;
+                &lt;/div&gt;
+               &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+
+                    &lt;input type=&quot;email&quot; name=&quot;name&quot; id=&quot;email&quot;
+                    placeholder=&quot;Enter your email&quot;&gt;
+                &lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label for=&quot;Phone Number&quot;&gt;Phone Number:&lt;/label&gt;
+                    &lt;input type=&quot;phone&quot; name=&quot;name&quot; id=&quot;Phone Number&quot;
+                    placeholder=&quot;Enter your phone number&quot;&gt;
+                &lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label for=&quot;Message&quot;&gt;Message:&lt;/label&gt;
+                    &lt;textarea name=&quot;message&quot; id=&quot;message&quot; cols=&quot;20&quot; rows=&quot;10&quot;
+placeholder=&quot;Enter your Message&quot;&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;
+        &lt;div class=&quot;center&quot;&gt;
+            copyright &amp;copy; www.cafetoronto.com. All rights reserved!
+        &lt;/div&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
